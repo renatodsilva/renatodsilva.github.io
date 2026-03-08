@@ -1,0 +1,190 @@
+<html>
+
+<head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+    <script src="js/scrollreveal.js"></script>
+    <LINK rel=StyleSheet href="css/main.css" type="text/css" media=screen>
+    <title>Para: Ana</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+    <meta name="color-scheme" content="light only">
+</head>
+
+
+<body>
+   
+    <style>
+
+        *, *::after,*::before{
+            margin: 0;  
+            padding: 0;
+            -webkit-box-sezing: border-box;
+            -moz-box-sezing: border-box;
+            box-sezing: border-box;
+        }
+        #barracarga{
+            background-color:rgb(255, 255, 255);
+            height: 100%;
+            width: 100%;
+            position: fixed;
+            -webkit-transition: all 1s ease;
+            -o-transition: all 1s ease;
+            transition: all 1s ease;
+            z-index:1000;
+        }
+    
+        #cargando{
+            border: 15px solid #ccc;
+            border-top-color: rgb(151, 150, 150);
+            border-radius: 100%;
+            height: 100px;
+            width: 100px;
+            position: absolute;
+            top:0px;
+            bottom:0px;
+            left:0px;
+            right: 0px;
+            margin:auto;
+            -webkit-animation: rotate  2s linear infinite;
+            animation: rotate  2s linear infinite;
+        }
+        @-webkit-keyframes rotate  {
+            from {-webkit-transform: rotate(0deg);}
+            to {-webkit-transform: rotate(360deg);}
+        }
+    
+    </style>
+    
+    <div id="barracarga"> 
+        
+        <div id="cargando"></div>
+    
+    </div>
+    
+    <script>
+       window.onload = function(){
+          
+            var contenedor = document.getElementById('barracarga');
+            
+            contenedor.style.visibility = 'hidden';
+            
+            contenedor.style.opacity = '0'
+       }
+    </script>
+    
+
+    <div id="container">
+      
+        
+        <div class="saludo">
+            <center>
+                <audio id="demo" src="gravaessaideia.m4a"></audio>
+                <script>
+                    var audio = document.getElementById('demo');
+                    audio.volume=0.016;
+                    document.getElementById('demo').play();
+                    document.getElementById('demo').pause()
+                </script>
+                <div>
+                </div>
+                <h1 class="entrada animacion-1"> Hoje é um dia especial... </h1>
+                <h2 class="inicio-h1 animacion-2">E tem algo que eu quero mostrar para uma menina especial</h2>
+                <h2 class="inicio-h1 animacion-3">É hora de começar</h2>
+                <h2 class="inicio-h1 animacion-4">Está pronta?</h2>     
+                <p>
+                    <span class="animacion-5">3..</span>
+                    <span class="animacion-6">2..</span>
+                    <span class="animacion-7">1..</span>
+                </p>
+                <a onclick="cambiar()" id="play"><img src="img/coracao.png" class="animacion-8 img " ></a> 
+
+                </script>              
+            </center>
+        </div>
+    </div>
+    <div id="container2">
+        <div class="saludo2">
+
+            <center>
+                <h1 class="title">Para: Ana<br>  <br></h1>
+            </center>
+            <h2  class=""> <span class="typed "></span> </h2>
+        </div>
+       
+    </div>
+    <div id="container3">
+        <div class="saludo2">
+        </div>
+       
+    </div>
+    
+    <script>
+        cont1= document.getElementById('container');
+        cont2= document.getElementById('container2');
+        cont3= document.getElementById('container3');
+        cont2.style.display= 'none';
+        cont3.style.display= 'none';
+        
+        function cambiar(){
+            document.getElementById('demo').play();
+            cont1.style.display= 'none';
+            cont2.style.display= 'block';
+            frase1='Tudo começou dia 4 de março, eu não estava esperando nada no dia, mas do nada você apareceu... <br> ';
+            frase2 = frase1 + 'Quando me chamaram a primeira vez eu ainda não sabia, ';
+            frase3 = frase2 + 'mas você se tornaria alguem muito especial para mim, ';
+            frase4 = frase3 + 'e quando eu menos esperava, nós estavamos ficando cada dia mais proxímos... <br>';
+            frase5 = frase4 + 'Ficavamos de gracinhas, jogando, em call, ';
+            frase6 = frase5 + 'todos os dias, ';
+            frase7 = frase6 + 'e começando a nos gostar cada vez mais.  <br> ';
+            frase8 = frase7 + 'Você se tornou alguem muito importante para mim, ';
+            frase9 = frase8 + 'sem dúvidas, ';
+            frase10 = frase9 + 'você é mais do que importante... <br>';
+            frase11 = frase10 + 'Você é a pessoa que veio para me por para dormir. <br>';
+            frase12 = frase11+ 'Você é a pessoa que eu acordo pensando.  <br>';
+            frase13 = frase12 + 'Você é tudo para mim... <br>';
+            frase14 = frase13 + 'Não sei como será daqui para frente, ';
+            frase15 = frase14 + 'mas eu não me arrependo de ter te conhecido.';
+            frase2_1 = 'Prometo ficar ao seu lado. <br>';
+            frase2_2 = frase2_1 + 'Prometo cuidar de você. <br>';
+            frase2_3 = frase2_2 + 'Prometo te bajular sempre que você quiser. <br><br>';
+            frase2_4 = frase2_3 + 'Tudo que você precisar, é só me chamar. <br>';
+            frase2_5 = frase2_4 + 'Seja lá o que for. <br>';
+            frase2_6 = frase2_5 + 'Sempre que eu puder, farei de você uma pessoa feliz. <br>';
+            frase2_7 = frase2_6 + 'O tempo que eu passo com você é perfeito. <br>';
+            frase2_8 = frase2_7 + 'Ficarei o dia todo com você se eu puder, ';
+            frase2_9 = frase2_8 + 'todos os dias, ';
+            frase2_10 = frase2_9 + 'só para termos mais tempo juntos. <br> ';
+            frase2_11 = frase2_10 + 'Obrigado, muito obrigado por ficar do meu lado também. <br>';
+            frase2_12 = frase2_11 + 'Obrigado por tudo. ';
+            frase3_1= 'Feliz dia das mulheres meu bem, te amo. 💜<br><br><br><br>';
+            frase3_2= frase3_1 + 'E como hoje é um dia especial. <br>';
+            frase3_3= frase3_2 + 'Eu gostaria de saber... <br><br>';
+            frase3_4= frase3_3 + 'Se você quer namorar comigo? 💍<br>' ;
+            frase3_5= frase3_4 + 'Você aceita?<br>';
+            const typed = new Typed('.typed', {
+                strings: [frase1, frase2,frase3, frase4, frase5,frase6,frase7,frase8,frase9,
+                        frase10,frase11,frase12,frase13,frase14,frase15,
+                        frase2_1,frase2_2,frase2_3,frase2_4,frase2_5,frase2_6,frase2_7,frase2_8,
+                        frase2_9,frase2_10,frase2_11,frase2_12,
+                        frase3_1, frase3_2, frase3_3, frase3_4, frase3_5,
+                    ],
+                typeSpeed: 10,
+                startDelay:2000,
+                cursorChar: '<3',
+            });
+        }
+        function creditos(){
+            cont2.style.display= 'none';
+            cont3.style.display= 'block';
+        }
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
+    <script>
+    </script>
+    <script src="js/main.js"> </script>
+    <script src="js/animaciones-1.js"> </script>
+    
+</body>
+</html>
+<!-- 
+
+
